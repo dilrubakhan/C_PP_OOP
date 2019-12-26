@@ -106,6 +106,54 @@ int main() {
 	cout<<"---- over-loaded == operator ------\n"<<endl;
 				if (b == c) { cout << "b and c are equal!" << "\n" <<endl; }//11.b
 
+	//12. Use of all four C++ explicit style casts.
+	cout<<"----Use of all four C++ explicit style casts------\n"<<endl;
+
+	//12.A - Static-cast
+				OffPickMember op1;
+					op1.setPrice(39.996666666666);
+						double x = op1.getPrice();
+						float foatPrice;
+						foatPrice = (float)(x);//Static-case-- changing double to float
+
+	//Checking if its really changing its type
+						if (foatPrice == 39.996666666666)
+							printf("Its not a float value");
+
+							else if (foatPrice == 39.996666666666f)//float
+
+							        printf("Its a float value \n");
+							 else printf("ELSE");
+
+	cout<< "Float value of price is: "<< foatPrice <<"\n"<<endl;
+
+	//12.B - Dynamic_cast
+
+	cout<< "--12.B - Dynamic_cast-- "<<endl;
+
+				Member drivedMem;
+				TeenMember *dtm = dynamic_cast<TeenMember*>(&drivedMem);	//dynamic cast
+							dtm->tennisUpdate();							//From Member class calling tennisUpdate
+																			//which is actually TeenMember's method
+
+	//12.C - Const_cast
+
+	cout<< "--12.C - Const_cast-- " <<endl;
+
+				const Member* cm = new Member;
+				Member* cm2 = const_cast<Member*>(cm);
+						cout<< "--Const_cast value is-- "<<cm2 <<"\n"<<endl;
+						delete cm;
+
+	//12.d - Reinterpret_cast
+
+	cout<< "--12.d - Reinterpret_cast-- \n" <<endl;
+				float* floatValue = new float(100.00f);
+				char* chValue = reinterpret_cast<char*>(floatValue);
+				cout <<"***********"<<chValue << endl;
+
+
+
 
 }
 
