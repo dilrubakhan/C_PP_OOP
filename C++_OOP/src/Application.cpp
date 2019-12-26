@@ -168,6 +168,16 @@ int main() {
 								delete opm;
 	cout <<"---------End of use of new and delete-------"<<endl;
 
+	//15.Static states of a class and an example usage. Demonstrate the impact.
+				cout <<"------.Static states of a class-----"<<endl;
+				Member statMem;
+				statMem.setId(110);
+				statMem.setName("Static Member");
+				statMem.setActivity("Badminton");
+				statMem.toString();
+				int memNum = Member::getNumberOfMember();
+				cout<<"Number of Member is: "<<memNum<<"\n"<<endl;
+
 
 }
 
