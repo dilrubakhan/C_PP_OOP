@@ -10,6 +10,7 @@
 using namespace std;
 
 #include "Gym.h"
+#include "Member.h"
 
 
 int main() {
@@ -25,6 +26,21 @@ int main() {
 				g.sayHello();
 
 				cout <<"------------------------"<<endl;
+
+	//*4.Operations on pointers to an object.
+
+				Member mem2(111,"Brín", "Swimming");
+
+				cout <<"---Operations on pointers to an object----"<<endl;
+
+						mem2.toString();
+
+				cout <<"--Using same value using pointers on Member object's--\n"<<endl;
+
+				Member *ptrMem;				// Declare pointer to a class.
+						ptrMem = &mem2;		// Save the address of the object
+						ptrMem->toString();
+
 
 		return 0;
 }
