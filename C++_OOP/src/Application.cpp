@@ -188,6 +188,13 @@ int main() {
 				//			statMem.setTestClass(10000);
 				//			cout<<"Test Class int value is: "<< statMem.getTestClass()<< "\n"<<endl;
 
+	//17. Passing an object to a method by constant reference. Demonstrate the impact.
+	cout <<"------Passing object by constant reference-----\n"<<endl;
+
+							Member cr = Member(123, "Dilruba", "Tennis");
+								   cr.operator +(cr);
+								   //cr.activity = "Badminton";// Giving error: within this context
+									cr.toString();
 }
 
 
