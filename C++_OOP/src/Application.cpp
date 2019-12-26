@@ -233,6 +233,21 @@ int main() {
 
 		cout <<"-------------Vector end-------------\n"<<endl;
 
+//20 Use of an algorithm on your container.
+				cout <<"--------20 Use of an algorithm---------"<<endl;
+				 int xx, xy, xz;
+				 xx = 10;
+				 xy = 22;
+				 xz = 34;
+				 vector<int> vect;  // declare a vector container of ints
+				 vect.push_back(xx);
+				 vect.push_back(xy);
+				 vect.push_back(xz);
+
+				// loop through vector with for_each loop and execute
+				// outputAlgorithm() for each element
+				for_each(vect.begin(), vect.end(), outputAlgorithm);
+
 }
 
 
