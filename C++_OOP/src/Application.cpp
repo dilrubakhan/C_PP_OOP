@@ -81,6 +81,11 @@ int main() {
 				OffPickMember op2 = op;
 				op2.toString();
 
+	//10. A working destructor with some basic functionality on one of your
+	//classes. Demonstrate it working in your main() function.
+
+	cout<<"---- Destructor Working------\n"<<endl;
+				Member m3;
 
 }
 
