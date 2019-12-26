@@ -159,6 +159,14 @@ int main() {
 				g.tennisMatchUpdate(new TeenMember);//static binding
 				g.tennisMatchUpdate(new Member);
 
+	//14.Correct use of new and delete for the allocation of an object/objects,
+	//with operations on the object using pointers.
+
+	cout <<"---------use of new and delete---------------"<<endl;
+				OffPickMember *opm = new OffPickMember;
+								opm->useOfNewAndDelete();
+								delete opm;
+	cout <<"---------End of use of new and delete-------"<<endl;
 
 
 }
