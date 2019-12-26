@@ -8,6 +8,8 @@
 
 #include <iostream>
 using namespace std;
+#include <vector>
+#include<algorithm>
 
 #include "Gym.h"
 #include "Member.h"
@@ -202,12 +204,35 @@ int main() {
 
 	cout <<"-----------class template---------"<<endl;
 
-							GymClassStorage <int> intArray;					//11.C- Correct use of three over-loaded operators
+						GymClassStorage <int> intArray;					//11.C- Correct use of three over-loaded operators
 								for (int i = 0; i <5; i++)
 									{
 									intArray[i] = i * i;
 									cout << " Int Array value is:  " << intArray[i] <<"\n"<< endl;
 									}
+
+	//19.Use of the vector container to contain a number of objects of one of your classes.
+
+	cout <<"-----Vector container to contain a number of objects------"<<endl;
+
+						Member *member1= new Member(111, "Vector Member", "Tennis"  );
+						Member *member2= new Member(112, "Vector2 Member", "Football"  );
+						Member *member3= new Member(113, "Vector3 Member", "Basketball"  );
+
+						vector <Member> memVector ;//Declare the Member type of vector
+
+										memVector.push_back(*member1);
+										memVector.push_back(*member2);
+										memVector.push_back(*member3);
+
+						vector<Member>::iterator it;//an iterator loop through the vector
+										for ( it = memVector.begin(); it != memVector.end(); ++it ) {
+
+										// For each Member, print out their info
+										       it->toString();}
+
+		cout <<"-------------Vector end-------------\n"<<endl;
+
 }
 
 
