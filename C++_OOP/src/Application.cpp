@@ -87,6 +87,26 @@ int main() {
 	cout<<"---- Destructor Working------\n"<<endl;
 				Member m3;
 
+	//11. Correct use of three over-loaded operators (e.g., +, = and ==)
+	//for one of your classes.
+
+	cout<<"---- over-loaded + operator ------\n"<<endl;
+				Member a = Member(444.00, 444);
+
+				Member b = Member("Dilruba", 222.50, 123);
+
+				Member d = b + a; //11.a
+					   d.toString();
+
+	cout<<"---- over-loaded + operator ------\n"<<endl;
+
+				Member c = Member("Dilruba", 222.50, 123);
+
+
+	cout<<"---- over-loaded == operator ------\n"<<endl;
+				if (b == c) { cout << "b and c are equal!" << "\n" <<endl; }//11.b
+
+
 }
 
 
