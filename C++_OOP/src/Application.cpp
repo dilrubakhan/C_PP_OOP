@@ -11,6 +11,7 @@ using namespace std;
 
 #include "Gym.h"
 #include "Member.h"
+#include "OffPickMember.h"
 
 
 int main() {
@@ -65,7 +66,22 @@ int main() {
 					   		//or
 					   		tm.setIsWeekend(true);
 					   		tm.permisionPool(tm);
-		return 0;
+
+	//*9.A class with a modified copy constructor and demonstrate the effect of this
+	//on pass-by-value and pass-by-reference calls.
+
+	//9.A pass-by-value call
+				OffPickMember op(60.00);
+					   		  op.toString();
+
+	//Copy Constructor
+	cout<<"---- Copy constructor.------\n"<<endl;
+
+	// 9.B pass-by-reference call
+				OffPickMember op2 = op;
+				op2.toString();
+
+
 }
 
 
