@@ -30,6 +30,12 @@ void Gym::checkAge (int a, double price) //2.function with one integer
 
 	}
 
+//3.Abstract classes with a method
+//pure virtual method
+void Gym::sayHello(){
+	cout<<"Derived for Abstract class:\nWelcome to Dublin's Best Health Clubs"<<endl;
+}
+
 Gym::~Gym() {
 
 }

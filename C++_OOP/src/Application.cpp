@@ -11,12 +11,18 @@ using namespace std;
 
 #include "Gym.h"
 
+
 int main() {
 	/*2.Over-loading using methods */
 			Gym g;
 				g.checkAge();
 				g.checkAge(18);
 				g.checkAge(20, 80);
+
+				cout <<"------------------------"<<endl;
+
+	/*3.Abstract classes with a method that is required in all derived classes*/
+				g.sayHello();
 
 				cout <<"------------------------"<<endl;
 
