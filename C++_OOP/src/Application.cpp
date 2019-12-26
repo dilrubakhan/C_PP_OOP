@@ -152,6 +152,12 @@ int main() {
 				char* chValue = reinterpret_cast<char*>(floatValue);
 				cout <<"***********"<<chValue << endl;
 
+	//13.Use of dynamic binding with virtual & non-virtual methods.
+
+	cout<<"---- Dynamic binding with virtual & non-virtual methods ------\n"<<endl;
+
+				g.tennisMatchUpdate(new TeenMember);//static binding
+				g.tennisMatchUpdate(new Member);
 
 
 

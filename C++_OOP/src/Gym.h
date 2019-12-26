@@ -5,6 +5,7 @@
 
 using namespace std;
 #include "Greeting.h"
+#include "TeenMember.h"
 
 class Gym :public Greeting{
 public:
@@ -19,6 +20,10 @@ public:
 	//3.Abstract class with a method
 	//pure virtual method
 		void sayHello();
+
+	//13.Use of dynamic binding with virtual & non-virtual methods. Demonstrate the impact.
+		void tennisMatchUpdate(TeenMember *obj);
+
 };
 
 

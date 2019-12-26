@@ -36,6 +36,11 @@ void Gym::sayHello(){
 	cout<<"Derived for Abstract class:\nWelcome to Dublin's Best Health Clubs"<<endl;
 }
 
+//13.Use of dynamic binding with virtual & non-virtual methods. Demonstrate the impact.
+void Gym::tennisMatchUpdate(TeenMember *tmobj){
+	tmobj->tennisUpdate();
+}
+
 Gym::~Gym() {
 
 }
