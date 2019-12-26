@@ -7,7 +7,7 @@
 using namespace std;
 
 Gym::Gym() {
-	cout << "!!!Hello From gym !!!" << endl; //
+
 }
 
 //2.Over-loading using methods
@@ -39,6 +39,15 @@ void Gym::sayHello(){
 //13.Use of dynamic binding with virtual & non-virtual methods. Demonstrate the impact.
 void Gym::tennisMatchUpdate(TeenMember *tmobj){
 	tmobj->tennisUpdate();
+}
+
+//16. Demonstrates the difference between a C++ class and a C++ struct.
+int Gym::getTestStruct() const {
+	return testStruct;
+}
+
+void Gym::setTestStruct(int testStruct) {
+	this->testStruct = testStruct;
 }
 
 Gym::~Gym() {

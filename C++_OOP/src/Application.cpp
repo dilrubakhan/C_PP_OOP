@@ -178,6 +178,15 @@ int main() {
 				int memNum = Member::getNumberOfMember();
 				cout<<"Number of Member is: "<<memNum<<"\n"<<endl;
 
+				//16.Demonstrates the difference between a C++ class and a C++ struct.
+
+							cout <<"------Difference between class and struct-----"<<endl;
+							g.setTestStruct(1000);
+
+							cout<<"Test Struct int value is: "<< g.getTestStruct()<< "\n"<<endl;
+
+				//			statMem.setTestClass(10000);
+				//			cout<<"Test Class int value is: "<< statMem.getTestClass()<< "\n"<<endl;
 
 }
 

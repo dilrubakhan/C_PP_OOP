@@ -8,6 +8,12 @@ using namespace std;
 #include "TeenMember.h"
 
 class Gym :public Greeting{
+
+	//16. Demonstrates the difference between a C++ class and a C++ struct.
+
+	int testStruct;						//default state of class
+
+
 public:
 	Gym();
 	virtual ~Gym();
@@ -24,6 +30,9 @@ public:
 	//13.Use of dynamic binding with virtual & non-virtual methods. Demonstrate the impact.
 		void tennisMatchUpdate(TeenMember *obj);
 
+	//16. Demonstrates the difference between a C++ class and a C++ struct.
+		int getTestStruct() const;
+		void setTestStruct(int testStruct);
 };
 
 
