@@ -41,7 +41,10 @@ int main() {
 						ptrMem = &mem2;		// Save the address of the object
 						ptrMem->toString();
 
+	//*5.Over-riding of a method of an abstract class.
 
+				cout <<"--------Over-riding of a method--------"<<endl;
+						g.getOffer();
 		return 0;
 }
 
