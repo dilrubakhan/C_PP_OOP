@@ -12,8 +12,14 @@ using namespace std;
 #include "Gym.h"
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	Gym g;
+	/*2.Over-loading using methods */
+			Gym g;
+				g.checkAge();
+				g.checkAge(18);
+				g.checkAge(20, 80);
+
+				cout <<"------------------------"<<endl;
+
 		return 0;
 }
 
